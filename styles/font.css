@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'Nunito Sans';
+	src: url(../fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\opsz\wdth\wght.ttf)
+		type('true-type');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
