@@ -363,10 +363,6 @@ main#contact #intro p {
 	border-radius: 50%;
 	display: block;
 }
-#home #testimonials div:first-child p {
-	font-weight: 600;
-	font-size: 1.2rem;
-}
 #home #testimonials article a span {
 	height: 40px;
 	width: 40px;
