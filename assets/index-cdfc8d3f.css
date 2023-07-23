@@ -746,6 +746,8 @@ main#contact #contact-options div a:nth-child(3) {
 	padding: 2rem;
 	opacity: 0.3;
 	font-weight: 400;
+	width: fit-content;
+	margin: auto;
 }
 #shop-home #products .product {
 	background-color: #ffece4;
