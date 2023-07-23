@@ -14160,76 +14160,74 @@ const Tg = () => {
 				id: 'shop-home',
 				children: [
 					c.jsx('h1', { className: 'fancy-header', children: 'Our Products' }),
-					c.jsx('div', {
-						className: 'products',
-						children:
-							t === 'loading'
-								? c.jsx(hp, { className: 'spin' })
-								: t === 'success'
-								? c.jsx('div', {
-										id: 'products',
-										children:
-											e.length < 1
-												? c.jsx('h2', {
-														className: 'load-info',
-														children: 'No products to show',
-												  })
-												: e.map((l) =>
-														c.jsxs(
-															'div',
-															{
-																className: 'product',
-																children: [
-																	c.jsx('img', {
-																		src: `data:image/png;base64,${l.image}`,
-																		alt: '',
-																	}),
-																	c.jsxs('div', {
-																		className: 'info',
-																		children: [
-																			c.jsx('h3', { children: l.name }),
-																			c.jsxs('p', {
-																				children: ['price: ₦', ar(l.price)],
-																			}),
-																		],
-																	}),
-																	c.jsxs('div', {
-																		className: 'options',
-																		children: [
-																			c.jsx('button', {
-																				className: 'btn',
-																				'data-id': l.id,
-																				onClick: (i) => {
-																					let { target: o } = i,
-																						{ id: a } = o.dataset,
-																						s = n.findIndex((d) => d.id === a);
-																					if (s < 0) {
-																						let d = { ...l, quantity: 1 };
-																						r([...n, d]);
-																						return;
-																					}
-																					let u = [...n];
-																					(u[s].quantity += 1), r(u);
-																				},
-																				children: 'Add to cart',
-																			}),
-																			c.jsx(me, {
-																				to: `/shop/products/${l.id}`,
-																				children: 'View product',
-																			}),
-																		],
-																	}),
-																],
-															},
-															l.id
-														)
-												  ),
-								  })
-								: c.jsx('h2', {
-										className: 'load-info',
-										children: 'Failed to load products',
-								  }),
-					}),
+					t === 'loading'
+						? c.jsx(hp, { className: 'spin' })
+						: t === 'success'
+						? c.jsx(c.Fragment, {
+								children:
+									e.length < 1
+										? c.jsx('h2', {
+												className: 'load-info',
+												children: 'No products to show',
+										  })
+										: c.jsx('div', {
+												id: 'products',
+												children: e.map((l) =>
+													c.jsxs(
+														'div',
+														{
+															className: 'product',
+															children: [
+																c.jsx('img', {
+																	src: `data:image/png;base64,${l.image}`,
+																	alt: '',
+																}),
+																c.jsxs('div', {
+																	className: 'info',
+																	children: [
+																		c.jsx('h3', { children: l.name }),
+																		c.jsxs('p', {
+																			children: ['price: ₦', ar(l.price)],
+																		}),
+																	],
+																}),
+																c.jsxs('div', {
+																	className: 'options',
+																	children: [
+																		c.jsx('button', {
+																			className: 'btn',
+																			'data-id': l.id,
+																			onClick: (i) => {
+																				let { target: o } = i,
+																					{ id: a } = o.dataset,
+																					s = n.findIndex((d) => d.id === a);
+																				if (s < 0) {
+																					let d = { ...l, quantity: 1 };
+																					r([...n, d]);
+																					return;
+																				}
+																				let u = [...n];
+																				(u[s].quantity += 1), r(u);
+																			},
+																			children: 'Add to cart',
+																		}),
+																		c.jsx(me, {
+																			to: `/shop/products/${l.id}`,
+																			children: 'View product',
+																		}),
+																	],
+																}),
+															],
+														},
+														l.id
+													)
+												),
+										  }),
+						  })
+						: c.jsx('h2', {
+								className: 'load-info',
+								children: 'Failed to load products',
+						  }),
 				],
 			}),
 		],
