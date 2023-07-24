@@ -839,7 +839,7 @@ main#contact #contact-options div a:nth-child(3) {
 	max-width: 50px;
 	outline: none;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 540px) {
 	#single-product > div {
 		grid-template-columns: 1fr;
 	}
