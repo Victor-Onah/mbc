@@ -763,6 +763,7 @@ main#contact #contact-options div a:nth-child(3) {
 	background-color: #ffece4;
 	border-radius: 10px;
 	overflow: hidden;
+	height: fit-content;
 }
 #shop-home #products .product img {
 	height: 200px;
@@ -786,6 +787,7 @@ main#contact #contact-options div a:nth-child(3) {
 #shop-home #products .product .options button {
 	flex-grow: 1;
 	border: none;
+	white-space: nowrap;
 }
 #shop-home #products .product .options a {
 	padding: 0.65rem;
@@ -797,6 +799,7 @@ main#contact #contact-options div a:nth-child(3) {
 	justify-content: center;
 	align-items: center;
 	box-shadow: var(--shadow);
+	white-space: nowrap;
 }
 @media screen and (min-width: 496px) and (max-width: 700px) {
 	#shop-home #products {
