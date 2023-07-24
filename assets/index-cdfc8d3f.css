@@ -844,7 +844,7 @@ main#contact #contact-options div a:nth-child(3) {
 		grid-template-columns: 1fr;
 	}
 	#single-product img {
-		max-width: 300px;
+		max-width: 350px;
 		margin: auto;
 	}
 }
