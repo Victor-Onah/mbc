@@ -14486,7 +14486,7 @@ function _g() {
 							(m = document.querySelector('#message')),
 							u.setAttribute('disabled', !0);
 						const y = new FormData();
-						y.append('order', JSON.stringify(l)),
+						y.append('order', JSON.stringify({ ...l, image: void 0 })),
 							y.append('phoneNumber', p.value.trim()),
 							y.append('name', d.value.trim());
 						let w = await (
