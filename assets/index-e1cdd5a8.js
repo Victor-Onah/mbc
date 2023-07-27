@@ -13126,7 +13126,7 @@ const Sr = () => {
 										children: 'Discover the Best Skincare Products',
 									}),
 									c.jsx(me, {
-										to: '/products',
+										to: '/shop',
 										className: 'btn animated slide-in',
 										children: 'View available products',
 									}),
@@ -13269,7 +13269,9 @@ const Sr = () => {
 																		}),
 																	}),
 																	c.jsx('a', {
-																		href: 'https://wa.me/2348108742236',
+																		href: `https://wa.me/2348108742236?text=${encodeURIComponent(
+																			'Hello MBC, I visited your website and I would like to connect with you.'
+																		)}`,
 																		children: c.jsx('span', {
 																			className: 'material-symbols-outlined',
 																			children: 'chat',
@@ -13305,7 +13307,9 @@ const Sr = () => {
 																		}),
 																	}),
 																	c.jsx('a', {
-																		href: 'https://wa.me/2349049861570',
+																		href: `https://wa.me/2348108742236?text=${encodeURIComponent(
+																			'Hello MBC, I visited your website and I would like to connect with you.'
+																		)}`,
 																		children: c.jsx('span', {
 																			className: 'material-symbols-outlined',
 																			children: 'chat',
@@ -13869,7 +13873,9 @@ const Cg = () => {
 									c.jsxs('div', {
 										children: [
 											c.jsxs('a', {
-												href: 'https://wa.me/2348101321849',
+												href: `https://wa.me/2348108742236?text=${encodeURIComponent(
+													'Hello MBC, I visited your website and I would like to connect with you.'
+												)}`,
 												target: '_blank',
 												className: 'animated slide-in',
 												children: [c.jsx(Sg, {}), ' WhatsApp'],
