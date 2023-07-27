@@ -13577,6 +13577,9 @@ const Sr = () => {
 											'Join our community of skincare enthusiasts! Connect with us on social media, share your skincare journey, and stay updated with the latest trends and insights. We love hearing from our customers and are here to support you on your quest for healthy and radiant skin.',
 									}),
 									c.jsx(me, {
+										href: `https://wa.me/2348108742236?text=${encodeURIComponent(
+											'Hello MBC, I visited your website and I would like to connect with you.'
+										)}`,
 										className: 'btn',
 										children: 'Join us on WhatsApp',
 									}),
