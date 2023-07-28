@@ -14484,9 +14484,10 @@ function _g() {
 						(d = document.querySelector('#name')),
 							(p = document.querySelector('#phone')),
 							(m = document.querySelector('#message')),
-							u.setAttribute('disabled', !0);
+							u.setAttribute('disabled', !0),
+							l.forEach((P) => (P.image = void 0));
 						const y = new FormData();
-						y.append('order', JSON.stringify({ ...l, image: void 0 })),
+						y.append('order', JSON.stringify([...l])),
 							y.append('phoneNumber', p.value.trim()),
 							y.append('name', d.value.trim());
 						let w = await (
