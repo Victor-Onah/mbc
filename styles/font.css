@@ -1,8 +1,7 @@
 @font-face {
 	font-family: 'Nunito Sans';
 	src: url(../fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\opsz\wdth\wght.ttf)
-		type('truetype');
-	font-display: swap;
+		format('truetype');
 }
 
 @font-face {
